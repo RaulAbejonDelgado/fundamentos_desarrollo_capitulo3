@@ -6,5 +6,7 @@
     'depends': ['fundamentos_desarrollo_capitulo2'],
     'data':[
         'views/todo_view.xml',
-        'security/todo_access_rules.xml',],
+        'security/todo_access_rules.xml',
+        #'views/todo_data.xml',
+        ],
 }
