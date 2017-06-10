@@ -62,7 +62,17 @@
                 </field>
             </record>
             
-
+            <!-- Modify menu item -->
+            <record id="fundamentos_desarrollo_capitulo2.menu_todo_task" model="ir.ui.menu">
+                <field name="name">My To-Do</field>
+            </record>
+            
+            <!-- Action to open To-Do Task list -->
+            <record id="fundamentos_desarrollo_capitulo2.action_todo_task" model="ir.actions.act_window" >
+                <field name="context">
+                    {'search_default_filter_my_tasks': True}
+                </field>
+            </record>
             
         </data>
     </openerp>
