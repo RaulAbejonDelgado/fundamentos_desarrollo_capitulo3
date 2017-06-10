@@ -3,7 +3,9 @@ from openerp import models, fields, api
 class TodoTask(models.Model):
     _name = 'todo.task'
     _inherit = ['todo.task', 'mail.thread']
+    _inherits = {'res.partner': 'partner_id'}
     
+    partner_id = fields.Many2one('res.partner')
     user_id = fields.Many2one('res.users', 'Responsible')
     date_deadline = fields.Date('Deadline')
     name = fields.Char(help="What needs to be done?")
